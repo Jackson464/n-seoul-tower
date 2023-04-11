@@ -1,0 +1,17 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'g-market-B';
+    src: url('../fonts/GmarketSansBold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'g-market-M';
+    src: url('../fonts/GmarketSansMedium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'n-sans-B';
+    src: url('../fonts/NotoSansKR-Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'n-sans-R';
+    src: url('../fonts/NotoSansKR-Regular.otf') format('truetype');
+}
