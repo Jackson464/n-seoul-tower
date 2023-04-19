@@ -3,3 +3,377 @@
         overflow-y: auto;
     }
 }
+
+
+@media screen and (max-width: 1710px) {
+    .main .visual .inner .visual-right{
+        display: none;
+    }
+    .main .visual .inner .visual-banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .observation-deck .inner .deck-banner{
+        right: 4%;
+    }
+    .header .inner .gnb{
+        padding-left: 10%;
+    }
+    .how-to-come .inner .come-content{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .footer .inner{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .footer .inner .footer-nav{
+        height: 24px;
+    }
+    .footer .inner .footer-nav nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main .visual .inner .visual-banner .main-swiper .swiper-wrapper .swiper-slide .vs-slide2{
+        background-position: center center;
+    }
+    .main .visual .inner .visual-banner .main-swiper .swiper-wrapper .swiper-slide .vs-slide3{
+        background-position: right center;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide{
+        height: 80%;
+    }
+
+}
+@media screen and (max-width: 1170px) {
+    .observation-deck .inner .deck-banner{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1134px) {
+    .sns .inner .title{
+        margin-top: 60px;
+    }
+    .sns .inner .sns-content .content-wrap .content-top .box01,
+    .sns .inner .sns-content .content-wrap .content-top .box03{
+        display: none;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .header .inner .gnb{
+        padding-left: 8%;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .header .inner .gnb{
+        padding-left: 1%;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .how-to-come .inner .come-content .content-wrap .come-left{
+        width: 40%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header .inner .gnb nav .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header .inner .gnb nav .menu > li{
+        float: none;
+    }
+    .header .inner .gnb nav .menu > li > a{
+        font-size: 16px;
+        padding: 0;
+    }
+    .observation-deck .inner .deck-content{
+        top: 1%;
+    }
+    .tower-event .inner{
+        padding-top: 0;
+    }
+    .tower-event .inner .event-content{
+        height: 90%;
+    }
+    .tower-event .inner .event-content .event-top{
+        top: 0;
+        flex-wrap: wrap;
+        height: 95%;
+    }
+    .tower-event .inner .event-content .event-top .event1{
+        height: 49%;
+        width: 50%;
+    }
+    .tower-event .inner .event-content .event-top .event2{
+        height: 49%;
+        width: 50%;
+    }
+    .tower-event .inner .event-content .event-top .event3{
+        height: 49%;
+        width: 100%;
+    }
+    .tower-event .inner .event-content .event-top .event3 .event-bg{
+        width: 95%;
+        border-radius: 8px;
+    }
+    .tower-event .inner .event-content .event-top .event .content{
+        bottom: 2%;
+        width: 90%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .tower-event .inner .event-content .event-top .event3 .content{
+        width: 95%;
+    }
+    .tower-event .inner .event-content .event-top .event .content .ev-btn{
+        bottom: 5%;
+    }
+    .tower-event .inner .event-content .event-top .event1 .content .txt-wrap{
+        height: 280px;
+    }
+    .sns .inner .title{
+        margin-top: 20px;
+    }
+    .how-to-come .inner .title{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .observation-deck .inner .title{
+        margin: 30px 0 10px;
+    }
+    .observation-deck .inner .deck-content{
+        top: 1%;
+    }
+    .observation-deck .inner .buy-ticket-wrap{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        bottom: -75%;
+        gap: 30px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .deck-ticket{
+        position: inherit;
+        top: 0;
+        left: 0;
+        height: 140px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .dining-ticket{
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        height: 140px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .mb-bt{
+        display: block;
+    }
+    .header .inner .logo-box .logo{
+        padding-left: 5%;
+    }
+    .header .inner .logo-box .logo a{
+        background-size: 80%;
+    }
+    .header .inner .logo-box .logo .white{
+        background-size: 80%;
+    }
+    .header.active .inner .gnb{
+        display: none;
+    }
+    .main .visual .inner .gnb-1st-section{
+        display: none;
+    }
+    .main .visual .inner .usage-time{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .main .visual .inner .usage-time .time-wrapper .tg .tg-baqh{
+        font-size: 12px;
+    }
+    .main .visual .inner .usage-time .time-wrapper .tg{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 890px) {
+    .how-to-come .inner .come-content .content-wrap .come-left .left-bg .bg-img{
+        background-size: 140%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 866px) {
+    .sns .inner .sns-content .content-wrap .content-top{
+        justify-content: center;
+    }
+    .sns .inner .sns-content .content-wrap .sns-btn{
+        margin-top: 36px;
+    }
+    .sns .inner .sns-content .content-wrap .content-top{
+        gap: 15px;
+    }
+    .sns .inner .sns-content .content-wrap .content-top .sns-box{
+        width: 33%;
+        height: 33%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .mb-nav .mb-nav-main .mb-pic{
+        padding-top: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .how-to-come .inner .come-content .content-wrap .come-left{
+        display: none;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right{
+        width: 100%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li{
+        width: 25%;
+    }
+    .footer .inner .content-bottom .award{
+        display: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .mb-nav .mb-nav-main .mb-pic{
+        padding-top: 60%;
+    }
+    .main .visual .inner{
+        height: 100vh;
+    }
+    .main .visual .inner .usage-time{
+        width: 100%;
+    }
+    .main .visual .inner .usage-time .time-wrapper .tg{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .main .visual .inner .usage-time .time-wrapper .tg .tg-baqh{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mb-nav .mb-nav-main .mb-pic{
+        padding-top: 74%;
+    }
+    .footer .inner .footer-icon{
+        top: 37%;
+        right: -8px;
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom{
+        padding: 0 20px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .txt-top .txt-wrap p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .tower-event .inner .event-content .event-top .event{
+        height: 33%;
+    }
+    .tower-event .inner .event-content .event-top .event1,
+    .tower-event .inner .event-content .event-top .event2{
+        width: 100%;
+    }
+    .tower-event .inner .event-content .event-top .event1 .event-bg .bg-img{
+        background-position: center top;
+    }
+    .tower-event .inner .event-content .event-top .event2 .event-bg .bg-img{
+        background-position: right top;
+    }
+    .tower-event .inner .event-content .event-top .event .content .txt-wrap{
+        height: 210px;
+    }
+
+    .sns .inner .title{
+        margin: 0 0 30px;
+    }
+    .sns .inner .sns-content .content-wrap .content-top .sns-box{
+        width: 45%;
+        height: 30%;
+    }
+    .sns .inner .sns-content .content-wrap .content-top .box01,
+    .sns .inner .sns-content .content-wrap .content-top .box03{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-title p{
+        font-size: 16px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-top .b-t-content{
+        font-size: 13px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li a{
+        font-size: 12px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li{
+        width: 23%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li:nth-child(3){
+        width: 32%;
+    }
+}
+@media screen and (max-width: 420px){
+    .footer .inner .footer-content .content-top .address p{
+        font-size: 11px;
+    }
+    .footer .inner .footer-content .content-top .call p{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .txt-top{
+        display: none;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-top{
+        justify-content: center;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-top .b-t-content{
+        font-size: 12px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content{
+        font-size: 12px;
+    }
+    .footer .inner .footer-content .content-top .address p{
+        text-align: center;
+    }
+    .footer .inner .footer-content .content-top .call{
+        justify-content: center;
+    }
+    .footer .inner .content-bottom .copy p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 380px) {
+    .footer .inner .footer-content .content-top .address{
+        display: none;
+    }
+    .footer .inner .footer-content .content-top .call{
+        flex-direction: column;
+    }
+}

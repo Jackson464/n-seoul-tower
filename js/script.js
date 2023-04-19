@@ -35,7 +35,7 @@ $(document).ready(function(){
         }else{
             wheeling = true;
             // sectionMenu.show();
-        }
+        };
     }
     wheelCheckFn();
     // $(window).resize(function(){
@@ -253,7 +253,11 @@ $(document).ready(function(){
     });
 
     let dn_swiper = new Swiper(".dn-swiper", {
-        slidesPerView: "auto",
+        slidesPerView: 1.5,
+        breakpoints: {
+            1200: { slidesPerView: "auto"},
+            800: { slidesPerView: 1.5},
+        },
         centeredSlides: true,
         grabCursor: true,
         loop: true,
@@ -329,6 +333,83 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    //Mobile menu
+    //.mb-bt를 저장해서 활용하자
+    $('.mb-bt').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('mb-bt-open')
+        $('.mb-menu-mask').toggleClass('mb-menu-mask-active')
+        $('.mb-nav').toggleClass('mb-nav-open')
+        $('.mb-menu>li').height(48)
+    })
+    //화면사이즈 체크
+    $(window).resize(function () {
+        let temp = $(window).width();
+        // console.log(temp);
+        if (temp > 900) {
+            $('.mb-bt').removeClass('mb-bt-open')
+            $('.mb-menu-mask').removeClass('mb-menu-mask-active')
+            $('.mb-nav').removeClass('mb-nav-open')
+        } else {
+            $('.all-menu-wrapper').removeClass('all-menu-wrapper-active')
+            $('.all-menu-mask').removeClass('all-menu-mask-active')
+        }
+    })
+    //모바일 메뉴 펼치기 기능
+    //1. 모바일 메뉴 불러오기
+    const mb_mainmenu = $('.mb-mainmenu')
+    //2. 모바일 서브메뉴 불러오기
+    const mb_submenu = $('.mb-submenu')
+    //3. 펼쳐진 서브메뉴의 높이값
+    let mb_submenu_height = [];
+    //4. 높이값 계산을 실행
+    // 배열명.foreach(function(item, index){할일})
+    // $.each(배열명, function(index, item){할일})
+    $.each(mb_submenu, function(index){
+        // 각각의 .mb-submenu로 가서
+        // il의 갯수를 샌다
+        let count = $(this).find('li').length;
+        // console.log(count)
+        // 최종결과저장 (51px * count + 22)
+        mb_submenu_height[index] = 48 * count + 22;
+    })
+    // console.log(mb_submenu_height)
+    let mb_li = $('.mb-menu > li')
+    $.each(mb_mainmenu,function(index){
+        $(this).click(function(e){
+            e.preventDefault();
+            // mb-mainmenu-open이 있으면 펼치고 없으면 닫기
+            $(this).toggleClass('mb-mainmenu-open')
+            $(this).parent().siblings().children().removeClass('mb-mainmenu-open')
+            let active = $(this).hasClass('mb-mainmenu-open')
+            if(active){
+                ($(this).children('.mb-submenu').is(':hidden'))
+                // 해당되는(클릭된) li > a(depth1)의 ul의 높이값을 temp에 저장
+                let temp = mb_submenu_height[index]
+                // 해당요소의 높이 부여
+                mb_li.eq(index).height(temp + 48);
+                mb_li.eq(index).siblings().height(48);
+            }else{
+                // 클릭이 안된 경우
+                mb_li.eq(index).height(48)
+            }
+        })
+    })
+    // mb_li.click(function(){
+    //     $(this).siblings().height(54)
+    // })
+    // mobile menu 배경 클릭 시 사라짐
+    const mb_menu_mask = $('.mb-menu-mask')
+    mb_menu_mask.click(function(){
+        //모바일 버튼 기능 초기화
+        $('.mb-bt').removeClass('mb-bt-open')
+        $('.mb-menu-mask').removeClass('mb-menu-mask-active')
+        $('.mb-nav').removeClass('mb-nav-open')
+        $('.mb-menu>li').height(54)
+        $('.mb-mb-mainmenu').removeClass('mb-mainmenu-open')
+    })
+})
 
 
 
@@ -347,13 +428,14 @@ window.onload = function(){
     gnb.mouseleave(function(){
         header.css('height',75)
     })
+    $('.logo-box-white').hide();
     $(window).on('scroll',function(){
         if($(window).scrollTop() >= 880){
             $('.header').addClass('active');
             $('.logo-box').addClass('remove');
         }else{
             $('.header').removeClass('active');
-            $('.logo-box').removeClass('remove')
-        }
+            $('.logo-box').removeClass('remove');
+        };
     })
 };
