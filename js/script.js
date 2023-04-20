@@ -339,6 +339,7 @@ $(document).ready(function(){
     $('.mb-bt').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('mb-bt-open')
+        $('html, body').toggleClass('hidden')
         $('.mb-menu-mask').toggleClass('mb-menu-mask-active')
         $('.mb-nav').toggleClass('mb-nav-open')
         $('.mb-menu>li').height(48)
@@ -349,12 +350,13 @@ $(document).ready(function(){
         // console.log(temp);
         if (temp > 900) {
             $('.mb-bt').removeClass('mb-bt-open')
+            $('html, body').removeClass('hidden')
             $('.mb-menu-mask').removeClass('mb-menu-mask-active')
             $('.mb-nav').removeClass('mb-nav-open')
         } else {
             $('.all-menu-wrapper').removeClass('all-menu-wrapper-active')
             $('.all-menu-mask').removeClass('all-menu-mask-active')
-        }
+        };
     })
     //모바일 메뉴 펼치기 기능
     //1. 모바일 메뉴 불러오기
@@ -408,6 +410,7 @@ $(document).ready(function(){
         $('.mb-nav').removeClass('mb-nav-open')
         $('.mb-menu>li').height(54)
         $('.mb-mb-mainmenu').removeClass('mb-mainmenu-open')
+        $('html, body').removeClass('hidden')
     })
 })
 

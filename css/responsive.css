@@ -236,6 +236,10 @@
     }
 }
 @media screen and (max-width: 800px) {
+    .observation-deck .inner .buy-ticket-wrap{
+        width: 95%;
+        margin: 0 auto;
+    }
     .how-to-come .inner .come-content .content-wrap .come-left{
         display: none;
     }
@@ -268,15 +272,31 @@
         padding: 0;
     }
 }
+@media screen and (max-width: 620px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 600px) {
     .mb-nav .mb-nav-main .mb-pic{
         padding-top: 74%;
+    }
+    .observation-deck .inner .deck-banner{
+        height: 640px;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .dn-btns{
+        bottom: 6%;
     }
     .footer .inner .footer-icon{
         top: 37%;
         right: -8px;
     }
 
+}
+@media screen and (max-width: 580px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 540px) {
     .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom{
@@ -315,8 +335,15 @@
     .sns .inner .sns-content .content-wrap .content-top .box03{
         display: none;
     }
+    .sns .inner .sns-content .content-wrap .sns-btn{
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width: 480px) {
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .dn-btns{
+        width: 90%;
+        bottom: 5%;
+    }
     .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-title p{
         font-size: 16px;
     }
@@ -326,8 +353,45 @@
     .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content{
         font-size: 13px;
     }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel2 .content-bottom .bottom-top .b-t-content p:nth-child(2){
+        display: none;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel2 .content-bottom .bottom-bottom .b-b-content p em:nth-child(2){
+        display: block;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom{
+        padding: 0 10px;
+    }
 }
 @media screen and (max-width: 460px) {
+    .observation-deck .inner .title{
+        margin-top: 60px;
+    }
+    .observation-deck .inner .deck-banner{
+        height: 500px;
+        top: 42%;
+    }
+    .observation-deck .inner .buy-ticket-wrap{
+        bottom: -63%;
+    }
+    .observation-deck .inner .buy-ticket-wrap .deck-ticket .content-inner .deck-btn{
+        width: 85%;
+        height: 40px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .deck-ticket .content-inner .deck-btn a{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .dining-ticket .content-inner .dining-btn{
+        width: 85%;
+        height: 40px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .dining-ticket .content-inner .dining-btn a{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
     .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li a{
         font-size: 12px;
     }
@@ -336,6 +400,19 @@
     }
     .how-to-come .inner .come-content .content-wrap .come-right .right-top .how li:nth-child(3){
         width: 32%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top .top01{
+        width: 43%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top .top02{
+        width: 43%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel3 .content-bottom .bottom-top .top03{
+        width: 50%;
     }
 }
 @media screen and (max-width: 420px){
@@ -357,7 +434,12 @@
         font-size: 12px;
     }
     .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content{
-        font-size: 12px;
+        font-size: 11px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content .b-b-left{
+        width: 20%;
     }
     .footer .inner .footer-content .content-top .address p{
         text-align: center;
@@ -369,11 +451,72 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 390px){
+    .tower-event .inner .event-content .event-top .event .content .txt-wrap p br{
+        display: none;
+    }
+}
 @media screen and (max-width: 380px) {
+    .main .visual .inner .usage-time{
+        width: 90%;
+        bottom: 12%;
+    }
+    .main .visual .inner .usage-time .time-wrapper .tg .tg-baqh{
+        font-size: 10px;
+    }
+    .mb-nav .mb-nav-main .mb-pic img{
+        scale: .8;
+    }
+    .observation-deck .inner .buy-ticket-wrap{
+        width: 95%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .dn-btns{
+        bottom: 20%;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .txt-wrap{
+        padding-top: 40%;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .txt-wrap .cont-title h4{
+        font-size: 14px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .deck-ticket .content-inner .deck-btn a{
+        font-size: 12px;
+    }
+    .observation-deck .inner .buy-ticket-wrap .dining-ticket .content-inner .dining-btn a{
+        font-size: 12px;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .dn-btns .btn{
+        width: 45%;
+    }
+    .dining .inner .dining-content .dining-banner .dn-swiper .dn-wrapper .swiper-slide-active .dn-slide .sw-item .content .txt-wrap p{
+        display: none;
+    }
     .footer .inner .footer-content .content-top .address{
         display: none;
     }
     .footer .inner .footer-content .content-top .call{
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 360px){
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content{
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content .b-b-left{
+        width: 40%;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .how-content .content-bottom .bottom-bottom .b-b-content .b-b-right div a{
+        display: none;
+    }
+}
+@media screen and (max-width: 340px) {
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel4 .content-bottom .bottom-bottom .b-b-content .b-b-left div{
+        margin-bottom: 25px;
+    }
+    .how-to-come .inner .come-content .content-wrap .come-right .right-content .tab-panel4 .content-bottom .bottom-bottom .b-b-content .b-b-left div:nth-child(1){
+        margin-bottom: 15px;
     }
 }

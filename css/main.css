@@ -28,6 +28,9 @@ html,body{
 body{
     font-family: 'n-sans-R' ,'n-sans-B', 'g-market-M', 'g-market-B';
 }
+.hidden{
+    overflow: hidden;
+}
 .clear::after{
     display: block;
     content: '';
@@ -484,7 +487,7 @@ body{
     background-color: #ffffff93;
     border-radius: 15px;
     font-family: 'g-market-M';
-    z-index: 999;
+    z-index: 996;
 }
 .main .visual .inner .usage-time .time-wrapper{
     width: 100%;
